@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "d687f146-2ff8-4146-bfb8-742732508152",
+		"name": "Ryze-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21882911",
+		"_collection_link": "https://interstellar-moon-611520.postman.co/workspace/essam~eb8c73d9-f373-4016-9388-8a0b4268a44f/collection/21882911-d687f146-2ff8-4146-bfb8-742732508152?action=share&source=collection_link&creator=21882911"
+	},
+	"item": [
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Abdallah\",\r\n    \"lastName\": \"Mohsen\",\r\n    \"email\": \"j@j.com\",\r\n    \"hireDate\": \"2025-08-27\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/employees",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Analyses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/employees/analyses",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employees",
+								"analyses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "testing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
