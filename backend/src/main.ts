@@ -39,7 +39,10 @@ async function bootstrap() {
 
 
   //cors
-  app.enableCors();
+  app.enableCors({
+    origin: 'http://localhost:3000',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
+  });
 
   await app.listen(3001);
 }

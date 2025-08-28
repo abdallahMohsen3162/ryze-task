@@ -26,8 +26,8 @@ export default function DepartmentsTable({ token }: { token: string }) {
     const params = new URLSearchParams({
       page: page.toString(),
       limit: limit.toString(),
-      search, // assuming your API supports ?search=
-      sortBy: "name", // assuming your API supports ?sortBy=name&order=asc
+      search, 
+      sortBy: "name", 
       order: sortOrder,
     })
 
